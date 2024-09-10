@@ -1,0 +1,48 @@
+body {
+  background-color: darksalmon;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+H1 {
+  text-align: center;
+}
+.levels {
+  border-radius: 30%;
+  text-align: center;
+  margin-left: 1050px;
+  position: left;
+}
+.theboard {
+  margin: 60px 100px 40px 150px;
+  /* display: flex; */
+  width: 1000px;
+  height: 800px;
+  gap: 70px;
+  padding: 60px 40px 40px;
+  background-color: blanchedalmond;
+  align-items: center;
+
+  /* justify-content: center; */
+}
+/* .guessed {
+  margin: -10px 10px 10px 100px;
+  align-items: center;
+}
+.guess {
+  margin: 400px 0px 100px 0px;
+  align-items: end;
+} */
+.footer {
+  margin-right: 0px;
+}
+.playagain {
+  width: fit-content;
+  margin-bottom: 500px;
+}
+ul.wordinboard {
+  font-size: 100px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
