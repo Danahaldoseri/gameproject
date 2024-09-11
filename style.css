@@ -60,6 +60,36 @@ H1 {
   margin: 400px 0px 100px 0px;
   align-items: end;
 } */
+.guess {
+  width: 150px;
+  padding: 0;
+  border: none;
+  transform: rotate(5deg);
+  transform-origin: center;
+  font-family: "Gochi Hand", cursive;
+  text-decoration: none;
+  font-size: 15px;
+  cursor: pointer;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  box-shadow: 0 2px 0 #494a4b;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: #5cdb95;
+}
+
+.guess span {
+  background: #f1f5f8;
+  display: block;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 2px solid #494a4b;
+}
+
+.guess:active {
+  transform: translateY(5px);
+  padding-bottom: 0px;
+  outline: 0;
+}
 
 .center {
   display: grid;
@@ -68,11 +98,11 @@ H1 {
 .footer {
   margin-right: 0px;
 }
-.playagain {
+/* .playagain {
   width: fit-content;
   margin-left: 850px;
   background-color: rgba(221, 8, 8, 0.99);
-}
+} */
 ul.wordinboard {
   font-size: 100px;
   margin-top: 50px;
@@ -86,4 +116,67 @@ ul.wordinboard {
   margin-top: 100px;
   flex-wrap: wrap;
   font-size: larger;
+}
+.playagain {
+  position: relative;
+  background-color: transparent;
+  color: #e8e8e8;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 10px;
+  margin-left: 850px;
+  width: 150px;
+  height: 60px;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(51, 51, 51, 0.2);
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.playagain::before {
+  content: "Byeee!";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(135deg, #7b4397, #dc2430);
+  transform: translate(0%, 90%);
+  z-index: 99;
+  position: relative;
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.playagain::after {
+  content: "startover";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  transform-origin: top;
+  transform: translate(0%, -100%);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.playagain:hover::before {
+  transform: translate(0%, 0%);
+}
+
+.playagain:hover::after {
+  transform: translate(0%, -200%);
+}
+
+.playagain:focus {
+  outline: none;
+}
+
+.playagain:active {
+  scale: 0.95;
 }
