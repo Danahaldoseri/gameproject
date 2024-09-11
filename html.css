@@ -1,7 +1,9 @@
 body {
   background-image: url("https://static.vecteezy.com/system/resources/previews/028/634/226/non_2x/a-classroom-with-a-blackboard-desk-pens-and-school-supplies-free-photo.jpg");
-  background-size: cover;
+  /* background-size: cover; */
   background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 100vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -10,10 +12,11 @@ body {
 }
 .mainbox {
   align-items: center;
-  margin-top: 100px;
+  margin-top: -200px;
   justify-content: center;
 }
 .names {
+  margin-top: 0%;
   border-radius: 50px;
 }
 .dot {
