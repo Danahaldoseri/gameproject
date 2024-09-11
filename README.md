@@ -26,12 +26,18 @@
 
 ##### start guessing the letters from(A-Z) tell you reach the game
 
-##### the game will have 3 Levels,Last level will be the hardest
+##### the game will have 2 Levels,Last level will be the hardest
 
 --
 
-### **_Screenshots_**
+### **Resources**
 
-### **_Credits_**
+#### [ChatGpt](https://poe.com/ChatGPT)
+
+#### [uiverse](https://uiverse.io/buttons)
+
+#### [geeksforgeeks](https://www.geeksforgeeks.org/build-a-hangman-game-using-javascript/?utm_source=auth&utm_medium=saved&utm_campaign=articles)
+
+#### [w3schools](https://www.w3schools.com/)
 
 ---
