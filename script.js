@@ -1,4 +1,3 @@
-// let name = document.querySelector(".Name").innerText
 let playagainbuttonn = document.getElementsByClassName(".playagain")[0]
 let guessword = document.querySelector(".guessed").innerText
 const guessInput = document.getElementsByClassName("guessed")[0]
@@ -8,8 +7,6 @@ const div = document.querySelector("ul")
 const hintt = document.querySelector(".hint")
 const hangmanImage = document.querySelector(".hangman-image")
 const hangmanImage1 = document.querySelector(".hangman1-image")
-// let contenstantname = prompt("what do you want to be called today?")
-// console.log(contenstantname)
 let wrongGuessCount
 let maximumattempt
 let level
@@ -26,20 +23,10 @@ const gameover = () => {
   alert("game over, see you next time")
 }
 const finishedgame = () => {
-  // alert("game over, you guess the correct word")
-  // level++
-  if (levelSolved) {
-    alert("Congratulations, you solved the level!")
-    level++ // Increment the level
-    const scriptTag = document.createElement("script")
-    scriptTag.src = `level${level}.js`
-    document.head.appendChild(scriptTag)
-    location.reload() // Reload the page to reset the game state
-  } else {
-    alert("You haven't solved the level yet! Try again.")
-  }
-  hangmanImage.src = `https://media.geeksforgeeks.org
-  /wp-content/uploads/20240215173028/0.png`
+  alert("game over, you guess the correct word")
+  level++
+  // hangmanImage.src = `https://media.geeksforgeeks.org
+  // /wp-content/uploads/20240215173028/0.png`
 }
 
 function startgame(gueesword) {
