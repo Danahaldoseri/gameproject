@@ -1,5 +1,7 @@
 body {
-  background-color: darksalmon;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/028/634/226/non_2x/a-classroom-with-a-blackboard-desk-pens-and-school-supplies-free-photo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -45,7 +47,7 @@ H1 {
   height: 800px;
   gap: 70px;
   padding: 60px 40px 40px;
-  background-color: blanchedalmond;
+  background-color: rgba(233, 227, 207, 0.942);
   align-items: center;
 
   /* justify-content: center; */
