@@ -8,11 +8,28 @@ body {
 H1 {
   text-align: center;
 }
+.hangman-image {
+  width: 300px;
+  height: 200px;
+  margin-top: -50px;
+}
 .hints {
   text-align: justify;
   margin-top: 100px;
   flex-wrap: wrap;
   font-size: larger;
+}
+.guessed {
+  height: 30px;
+  width: 200px;
+  margin-top: 50px;
+}
+.guess {
+  height: 35px;
+  width: 100px;
+  background-color: rgba(224, 53, 53, 0.99);
+  border: none;
+  color: black;
 }
 .levels {
   border-radius: 30%;
@@ -40,16 +57,30 @@ H1 {
   margin: 400px 0px 100px 0px;
   align-items: end;
 } */
+
+.center {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 .footer {
   margin-right: 0px;
 }
 .playagain {
   width: fit-content;
-  margin-bottom: 500px;
+  margin-left: 850px;
+  background-color: rgba(221, 8, 8, 0.99);
 }
 ul.wordinboard {
   font-size: 100px;
+  margin-top: 50px;
   align-items: center;
   display: flex;
   justify-content: center;
+}
+
+.wrongattempt {
+  text-align: right;
+  margin-top: 100px;
+  flex-wrap: wrap;
+  font-size: larger;
 }
