@@ -10,8 +10,11 @@ const hintt = document.querySelector(".hint")
 // console.log(contenstantname)
 let wrongAttempts
 let maximumattempt
+let level
+let levelsolved = false
 wrongAttempts = 0
 maximumattempt = 6
+level = 1
 let theword = "today"
 let thehint = "Not tomorrow.not yesterday"
 hintt.innerText = thehint
@@ -21,8 +24,20 @@ const gameover = () => {
   alert("game over, see you next time")
 }
 const finishedgame = () => {
-  alert("game over, you guess the correct word")
+  // alert("game over, you guess the correct word")
+  // level++
+  if (levelSolved) {
+    alert("Congratulations, you solved the level!")
+    level++ // Increment the level
+    const scriptTag = document.createElement("script")
+    scriptTag.src = `level${level}.js`
+    document.head.appendChild(scriptTag)
+    location.reload() // Reload the page to reset the game state
+  } else {
+    alert("You haven't solved the level yet! Try again.")
+  }
 }
+
 function startgame(gueesword) {
   let updatedWord = ""
   for (let i = 0; i < word.length; i++) {
@@ -59,8 +74,8 @@ guessButton.addEventListener("click", (e) => {
     location.reload() // chatGpt
   }
   if (finished === theword) {
+    levelsolved = true
     finishedgame()
-    location.reload()
   }
 })
 const playagainbutton = document.querySelector(".playagain")
@@ -69,6 +84,7 @@ const startgameb = () => {
   location.reload()
 }
 playagainbutton.addEventListener("click", startgameb)
+document.getElementById("nextlevel").addEventListener("click", finishedgame)
 // let name = document.querySelector(".Name").innerText
 // let gueesword = document.querySelector(".guessed").innerText
 // const guessInput = document.getElementsByClassName("guessed")[0]

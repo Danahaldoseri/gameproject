@@ -7,17 +7,21 @@ const div = document.querySelector("ul")
 const hintt = document.querySelector(".hint")
 // let contenstantname = prompt("what do you want to be called today?")
 // console.log(contenstantname)
+
 let wrongAttempts
 let maximumattempt
+let level
+level = 2
 wrongAttempts = 0
 maximumattempt = 6
-let theword = "waterfall"
-let thehint = "A cascade of water falling from a height"
+let theword = "sunset"
+let thehint = "The daily disappearance of the sun below the horizon"
 hintt.innerText = thehint
 let word = theword.split("")
-let thereal = ["___", "___", "___", "___", "___"]
+let thereal = ["___", "___", "___", "___", "___", "___"]
 const gameover = () => {
   alert("game over, see you next time")
+  level++
 }
 const finishedgame = () => {
   alert("game over, you guess the correct word")

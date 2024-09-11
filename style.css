@@ -3,9 +3,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "Roboto", sans-serif;
 }
 H1 {
   text-align: center;
+}
+.hints {
+  text-align: justify;
+  margin-top: 100px;
+  flex-wrap: wrap;
+  font-size: larger;
 }
 .levels {
   border-radius: 30%;

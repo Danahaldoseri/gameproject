@@ -9,18 +9,21 @@ const hintt = document.querySelector(".hint")
 // console.log(contenstantname)
 let wrongAttempts
 let maximumattempt
+let level
+level = 3
 wrongAttempts = 0
 maximumattempt = 6
-let theword = "sunset"
-let thehint = "The daily disappearance of the sun below the horizon"
+let theword = "waterfall"
+let thehint = "A cascade of water falling from a height"
 hintt.innerText = thehint
 let word = theword.split("")
-let thereal = ["___", "___", "___", "___", "___"]
+let thereal = ["___", "___", "___", "___", "___", "___", "___", "___", "___"]
 const gameover = () => {
   alert("game over, see you next time")
 }
 const finishedgame = () => {
   alert("game over, you guess the correct word")
+  level++
 }
 function startgame(gueesword) {
   let updatedWord = ""
